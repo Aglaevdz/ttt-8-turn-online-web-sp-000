@@ -1,6 +1,6 @@
 require "pry"
 def turn(board)
-  while valid_move?(board, index) == position_taken(board,index)
+  while valid_move?(board, index) == !position_taken(board,index)
     puts "Please enter 1-9:"
     input = gets.strip
     index = index.to_i
