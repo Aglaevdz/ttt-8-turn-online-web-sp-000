@@ -18,7 +18,7 @@ end
   puts " #{board[6]} | #{board[7]} | #{board [8]} "
 end
   def input_to_index(input)
-  index = input.to_i-1
+  input = input.to_i-1
 end
   def move(board, index, value = "X")
   puts board[index.to_i] = value
