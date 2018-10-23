@@ -6,7 +6,6 @@ require "pry"
     binding.pry
     while valid_move?(board,index) && !position_taken?(board,index)
     move(board,index)
-    end
     display_board(board)
     end
 end
