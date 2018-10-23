@@ -4,7 +4,7 @@ require "pry"
 binding.pry
   while valid_move?(board, index) == !position_taken?(board,index)
     input = gets.strip
-    input_to_index(input)
+    index = input_to_index(input)
     move(board, index)
     turn(board)
   end
