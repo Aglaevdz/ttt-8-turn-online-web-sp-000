@@ -3,10 +3,9 @@ require "pry"
   puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
-    while valid_move?(board, index)
+    valid_move?(board, index)
       move(board,index)
-      puts "Please enter 1-9:"
-    position_taken?(board,index)
+        position_taken?(board,index)
     display_board(board)
   end
     end
