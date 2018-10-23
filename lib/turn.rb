@@ -6,8 +6,8 @@ require "pry"
     input = gets.strip
     index = input_to_index(input)
     move(board, index)
-    turn(board)
-  end
+    display_board(board)
+    end
 end
 
   def display_board(board)
