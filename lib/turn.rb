@@ -7,6 +7,7 @@ require "pry"
       puts "Please enter 1-9:"
     else position_taken?(board,index)
     display_board(board)
+  end
     end
 end
 
