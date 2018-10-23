@@ -3,7 +3,7 @@ def turn(board)
   while valid_move?(board, index) == !position_taken(board,index)
     puts "Please enter 1-9:"
     input = gets.strip
-    index = index.to_i
+    index = index.to_i-1
     input_to_index(input)
     move(board, index)
   end
