@@ -16,13 +16,15 @@ end
   puts " #{board[3]} | #{board[4]} | #{board[5]} "
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board [8]} "
-end
+  end
+  
   def input_to_index(input)
   input.to_i-1
-end
+  end
+  
   def move(board, index, value = "X")
   puts board[index.to_i] = value
-end
+  end
 
   def position_taken?(board,index)
   if board[index] == " " || board[index] == "" || board[index] == nil
@@ -37,3 +39,4 @@ def valid_move?(board,index)
    true
   end
 end
+
