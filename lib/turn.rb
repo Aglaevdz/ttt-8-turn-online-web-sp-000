@@ -1,4 +1,4 @@
-required "pry"
+require "pry"
  def turn(board)
   puts "Please enter 1-9:"
 binding.pry
