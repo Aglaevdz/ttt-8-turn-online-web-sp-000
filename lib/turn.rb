@@ -1,7 +1,7 @@
 require "pry"
  def turn(board)
   puts "Please enter 1-9:"
-binding.pry
+
   while valid_move?(board, index) == !position_taken?(board,index)
     input = gets.strip
     index = input_to_index(input)
@@ -17,11 +17,11 @@ end
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board [8]} "
   end
-  
+
   def input_to_index(input)
   input.to_i-1
   end
-  
+
   def move(board, index, value = "X")
   puts board[index.to_i] = value
   end
@@ -39,4 +39,3 @@ def valid_move?(board,index)
    true
   end
 end
-
