@@ -1,6 +1,7 @@
+required "pry"
  def turn(board)
   puts "Please enter 1-9:"
-
+binding.pry
   while valid_move?(board, index) == !position_taken?(board,index)
     input = gets.strip
     input_to_index(input)
