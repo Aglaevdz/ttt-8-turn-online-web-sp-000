@@ -9,7 +9,6 @@ require "pry"
     display_board(board)
    else
      turn(board)
-    display_board(board)
     end
 end
 
