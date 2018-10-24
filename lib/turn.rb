@@ -6,6 +6,7 @@ require "pry"
 
     if valid_move?(board,index)
     move(board,index)
+   else
     display_board(board)
     end
 end
